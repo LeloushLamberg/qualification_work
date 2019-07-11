@@ -1,0 +1,25 @@
+{
+    "version": 3,
+    "mappings": "ACAA,UAAU;EACR,WAAW,EAAE,sBAAsB;EACnC,GAAG,EAAE,kDAAkD;EACvD,GAAG,EAAE,kDAAkD,CAAC,kBAAkB,EAC1E,mDAAmD,CAAC,cAAc,EAClE,kDAAkD,CAAC,kBAAkB;EACrE,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,IAAI;;AACpB,UAAU;EACR,WAAW,EAAE,uBAAuB;EACpC,GAAG,EAAE,mDAAmD;EACxD,GAAG,EAAE,mDAAmD,CAAC,kBAAkB,EAC3E,oDAAoD,CAAC,cAAc,EACnE,mDAAmD,CAAC,kBAAkB;EACtE,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,IAAI;;AACpB,UAAU;EACR,WAAW,EAAE,uBAAuB;EACpC,GAAG,EAAE,mDAAmD;EACxD,GAAG,EAAE,mDAAmD,CAAC,kBAAkB,EAC3E,oDAAoD,CAAC,cAAc,EACnE,mDAAmD,CAAC,kBAAkB;EACtE,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,IAAI;;AC1BpB,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;EACtB,OAAO,EAAE,IAAI,GAAG;;AAClB,AACE,CADD,AACE,KAAK,CAAC;EACL,eAAe,EAAE,IAAI,GAAG;;AAF5B,AAGE,CAHD,AAGE,QAAQ,CAAC;EACR,eAAe,EAAE,IAAI,GAAG;;AAJ5B,AAKE,CALD,AAKE,OAAO,CAAC;EACP,eAAe,EAAE,IAAI,GAAG;;AAN5B,AAOE,CAPD,AAOE,MAAM,CAAC;EACN,eAAe,EAAE,IAAI,GAAG;;AAI5B,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,MAAM;EACb,MAAM,EAAE,IAAI,GAAG;;AEhBd,AAAD,aAAO,CAAC;EACN,OAAO,EAAE,IAAI,GAAG",
+    "sources": [
+        "../sass/style.sass",
+        "../sass/_fonts.sass",
+        "../sass/_interface.sass",
+        "../sass/_color.sass",
+        "../sass/blocks/_navbar.sass",
+        "../sass/blocks/_hero.sass",
+        "../sass/blocks/_amenities.sass",
+        "../sass/blocks/_choice.sass",
+        "../sass/blocks/_feedback.sass",
+        "../sass/blocks/_news.sass",
+        "../sass/blocks/_offer.sass",
+        "../sass/blocks/_footer.sass",
+        "../sass/media/_media320.sass",
+        "../sass/media/_media567.sass",
+        "../sass/media/_media768.sass",
+        "../sass/media/_media992.sass",
+        "../sass/media/_media1200.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
