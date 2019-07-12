@@ -1,81 +1,45 @@
 .hero
+  position: relative
   &-slider
-    list-style: none
-    margin: 0
-    padding: 0
-    z-index: -2 
-    background: #000
-    position: fixed
     width: 100%
-    height:  100%
-    top: 0px
-    left: 0px
-
-    &:after 
-      content: ''
-      position: fixed
-      width: 100%
-      height: 100%
-      top: 0px
-      left: 0px
- 
-  li
-    width: 100%
-    height: 100%
     position: absolute
     top: 0
     left: 0
-    background-size: cover
-    background-repeat: none
-    opacity: 0
-    -webkit-animation: anim_slides 18s linear infinite 0s
-    -moz-animation: anim_slides 18s linear infinite 0s
-    -o-animation: anim_slides 18s linear infinite 0s
-    -ms-animation: anim_slides 18s linear infinite 0s
-    animation: anim_slides 18s linear infinite 0s
-
-    &:nth-child(1)
-      background-image: url("../img/hero/bgi-hero.jpg") 
-
-
-    &:nth-child(2)
-      -webkit-animation-delay: 4.0s
-      -moz-animation-delay: 4.0s
-      background-image: url("../img/hero/bgi-hero.jpg") 
-
-    &:nth-child(3)
-      -webkit-animation-delay: 8.0s
-      -moz-animation-delay: 8.0s
-      background-image: url("../img/hero/bgi-hero.jpg") 
- 
-    &:nth-child(4)
-      -webkit-animation-delay: 12.0s
-      -moz-animation-delay: 12.0s
-      background-image: url("../img/hero/bgi-hero.jpg") 
-
-@-webkit-keyframes anim_slides 
-  0% 
-    opacity: 0
-  6% 
-    opacity: 1
-  24% 
-    opacity: 1
-  30% 
-    opacity: 0
-  100% 
-    opacity: 0
-  6% 
-    opacity: 1
-  24% 
-    opacity: 1
-  30% 
-    opacity: 0
-  100% 
-    opacity: 0
-
-
+    z-index: -2
+    &__1,&__2,&__3,&__4,
+      min-width: 1200px
+      min-height: 742px
+      width: 100%
+      
+      background-repeat: no-repeat
+      background-size: cover
+    &__1
+      background-image: url("../img/hero/bgi-hero.jpg")
+    &__2
+      background-image: url("../img/hero/bgi-hero1.jpg")
+    &__3
+      background-image: url("../img/hero/bgi-hero2.jpg")
+    &__4
+      background-image: url("../img/hero/bgi-hero3.jpg")
+  &-dots
+    
+    display: inline-flex
+    text-align: center
+    justify-content: space-between
+    width: 112px
+    position: absolute
+    bottom: 45px
+    left: 700px
+    &__item
+      width: 20px
+      height: 20px
+      background: $light-tc
+      &:active
+        background: $main-color
+      
   &-block
     width: 100%
+    
   &__title
     padding-left: 5px
     width: 100%
@@ -91,7 +55,7 @@
     text-transform: uppercase
     margin-bottom: 0px
   &__subtitle
-    // color: $light-tc
+    color: $light-tc
     margin-left: -2px
     +reg
     font-size: 35px
@@ -99,7 +63,7 @@
     line-height: 50px
   &__text
     opacity: 0.42
-    // color: $light-tc
+    color: $light-tc
     +reg
     font-size: 20px
     font-weight: 300
@@ -113,3 +77,4 @@
     font-weight: 400
     background: $main-color
     text-transform: uppercase
+    margin-bottom: 270px
