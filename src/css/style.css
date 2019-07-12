@@ -1,24 +1,24 @@
 @font-face {
-  font-family: "Proxima Nova Regular";
-  src: url("./fonts/ProximaNova/ProximaNova-Regular.otf");
-  src: url("./fonts/ProximaNova/ProximaNova-Regular.otf") format("opentype"), url("./fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"), url("./fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova/ProximaNova-Regular.eot");
+  src: local("Proxima Nova Regular"), local("../fonts/ProximaNova/ProximaNova-Regular"), url("../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: auto; }
 
 @font-face {
-  font-family: "Proxima Nova Semibold";
-  src: url("./fonts/ProximaNova/ProximaNova-Semibold.otf");
-  src: url("./fonts/ProximaNova/ProximaNova-Semibold.otf") format("opentype"), url("./fonts/ProximaNova/ProximaNova-Semibold.woff") format("woff"), url("./fonts/ProximaNova/ProximaNova-Semibold.ttf") format("truetype");
-  font-weight: normal;
+  font-family: 'Proxima Nova Lt';
+  src: url("../fonts/ProximaNova/ProximaNova-Semibold.eot");
+  src: local("Proxima Nova Semibold"), local("../fonts/ProximaNova/ProximaNova-Semibold"), url("../fonts/ProximaNova/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 600;
   font-style: normal;
   font-display: auto; }
 
 @font-face {
-  font-family: "Proxima Nova Extrabld";
-  src: url("./fonts/ProximaNova/ProximaNova-Extrabld.otf");
-  src: url("./fonts/ProximaNova/ProximaNova-Extrabld.otf") format("opentype"), url("./fonts/ProximaNova/ProximaNova-Extrabld.woff") format("woff"), url("./fonts/ProximaNova/ProximaNova-Extrabld.ttf") format("truetype");
-  font-weight: normal;
+  font-family: 'Proxima Nova Th';
+  src: url("../fonts/ProximaNova/ProximaNova-Extrabld.eot");
+  src: local("Proxima Nova Extrabold"), local("../fonts/ProximaNova/ProximaNova-Extrabld"), url("../fonts/ProximaNova/ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Extrabld.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-Extrabld.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Extrabld.ttf") format("truetype");
+  font-weight: 800;
   font-style: normal;
   font-display: auto; }
 
@@ -28,23 +28,125 @@
   outline: none; }
 
 a:link {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #020202; }
 
 a:visited {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #020202; }
 
 a:active {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #020202; }
 
 a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #020202; }
+
+body {
+  font-family: sans-serif;
+  font-family: "Proxima Nova Rg";
+  color: #020202; }
 
 .container {
   width: 1170px;
   margin: auto; }
 
-.navbar-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+.navbar {
+  max-height: 60px;
+  height: 100%; }
+  .navbar-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .navbar-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .navbar-logo__logo {
+      margin-top: -3px;
+      padding-top: 3px; }
+    .navbar-logo__text {
+      font-family: "Proxima Nova Lt";
+      font-size: 15px;
+      margin-top: 0;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-style: italic; }
+  .navbar-links {
+    font-family: "Proxima Nova Rg";
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .navbar-links__item {
+      display: inline;
+      margin-top: -5px;
+      padding: 0 23px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 40px;
+      position: relative; }
+      .navbar-links__item:first-child {
+        padding-left: 40px; }
+      .navbar-links__item:last-child:before {
+        display: none; }
+      .navbar-links__item:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        margin: 14px 0;
+        width: 1px;
+        height: 30%;
+        border-right: 1px solid #ececec; }
+  .navbar-communication {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .navbar-communication__link {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: -5px; }
+    .navbar-communication__code {
+      font-size: 18px;
+      padding: 0 5px;
+      font-family: "Proxima Nova Rg"; }
+    .navbar-communication__number {
+      font-size: 18px;
+      font-family: "Proxima Nova Th";
+      font-weight: 700;
+      padding-right: 40px; }
+    .navbar-communication__callback {
+      display: inline-block;
+      padding: 7px 15px;
+      background: #ffc800;
+      border: none;
+      font-size: 14px;
+      font-family: "Proxima Nova Lt"; }
+      .navbar-communication__callback:hover {
+        background-color: #ffd333;
+        cursor: pointer; }
 /*# sourceMappingURL=style.css.map */
