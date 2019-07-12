@@ -1,4 +1,79 @@
 .hero
+  &-slider
+    list-style: none
+    margin: 0
+    padding: 0
+    z-index: -2 
+    background: #000
+    position: fixed
+    width: 100%
+    height:  100%
+    top: 0px
+    left: 0px
+
+    &:after 
+      content: ''
+      position: fixed
+      width: 100%
+      height: 100%
+      top: 0px
+      left: 0px
+ 
+  li
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-size: cover
+    background-repeat: none
+    opacity: 0
+    -webkit-animation: anim_slides 18s linear infinite 0s
+    -moz-animation: anim_slides 18s linear infinite 0s
+    -o-animation: anim_slides 18s linear infinite 0s
+    -ms-animation: anim_slides 18s linear infinite 0s
+    animation: anim_slides 18s linear infinite 0s
+
+    &:nth-child(1)
+      background-image: url("../img/hero/bgi-hero.jpg") 
+
+
+    &:nth-child(2)
+      -webkit-animation-delay: 4.0s
+      -moz-animation-delay: 4.0s
+      background-image: url("../img/hero/bgi-hero.jpg") 
+
+    &:nth-child(3)
+      -webkit-animation-delay: 8.0s
+      -moz-animation-delay: 8.0s
+      background-image: url("../img/hero/bgi-hero.jpg") 
+ 
+    &:nth-child(4)
+      -webkit-animation-delay: 12.0s
+      -moz-animation-delay: 12.0s
+      background-image: url("../img/hero/bgi-hero.jpg") 
+
+@-webkit-keyframes anim_slides 
+  0% 
+    opacity: 0
+  6% 
+    opacity: 1
+  24% 
+    opacity: 1
+  30% 
+    opacity: 0
+  100% 
+    opacity: 0
+  6% 
+    opacity: 1
+  24% 
+    opacity: 1
+  30% 
+    opacity: 0
+  100% 
+    opacity: 0
+
+
   &-block
     width: 100%
   &__title
