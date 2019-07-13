@@ -61,6 +61,10 @@ h1, h2, h3 {
   border: none;
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -78,6 +82,21 @@ ul, li {
 .container {
   width: 1170px;
   margin: auto;
+}
+
+.section {
+  padding-top: 100px;
+}
+
+.section-button {
+  margin-top: 6px;
+  margin-left: -32px;
+  width: 244px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 58px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .slick-slider {
@@ -376,7 +395,7 @@ ul, li {
   width: 112px;
   position: absolute;
   bottom: 45px;
-  left: 700px;
+  left: 600px;
 }
 
 .hero-dots__item {
@@ -398,7 +417,7 @@ ul, li {
   width: 100%;
   margin: 0;
   padding: 0;
-  margin-top: 200px;
+  margin-top: 100px;
   display: inline-block;
   text-align: justify;
   font-family: "Proxima Nova Lt";
@@ -437,5 +456,88 @@ ul, li {
   background: #ffc800;
   text-transform: uppercase;
   margin-bottom: 270px;
+}
+
+.price {
+  background: url("../img/price/bg-price.jpg");
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.price-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.price__list {
+  padding-top: 65px;
+}
+
+.price-item {
+  width: 377px;
+  height: 236px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price-item__description {
+  display: inline-block;
+  text-align: center;
+  color: #fffffe;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.price__item-1 {
+  margin: 10px 9px;
+  background: url("../img/price/photo-1.jpg");
+}
+
+.price__item-2 {
+  margin: 9px;
+  background: url("../img/price/photo-2.jpg");
+}
+
+.price__item-3 {
+  margin: 9px;
+  background: url("../img/price/photo-3.jpg");
+}
+
+.price__item-4 {
+  margin: 9px;
+  background: url("../img/price/photo-1.jpg");
+}
+
+.price__item-5 {
+  margin: 9px;
+  background: url("../img/price/photo-2.jpg");
+}
+
+.price__item-6 {
+  margin: 9px;
+  background: url("../img/price/photo-3.jpg");
+}
+
+.price li:nth-child(3n-2) {
+  margin-left: 0;
+}
+
+.price li:nth-child(3n) {
+  margin-right: -1px;
 }
 /*# sourceMappingURL=style.css.map */
