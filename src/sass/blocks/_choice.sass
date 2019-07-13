@@ -1,0 +1,67 @@
+.choice
+  position: relative
+  &:before
+    contain: ''
+    position: absolute
+    background: $lighten
+    
+
+  &-block
+    display: flex
+    justify-content: center
+    align-items: center
+    li
+      &:nth-child(3n-2)
+        left: 0px
+      &:nth-child(3n)
+        margin-right: 40px
+  &-element
+    flex-basis: 75%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+   
+    &__item
+      width: 198px
+      height: 168px
+      background: red
+      margin: 18px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      
+    &__icon
+      display: inline
+      text-align: center
+      padding: 10px
+    &__label
+      +reg
+      font-size: 18px
+      font-weight: 400
+      line-height: 23px
+      text-transform: uppercase  
+  &__element
+    padding: 20px 0
+
+  &-advantage
+    flex-basis: 40%
+    &__list
+
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    &__counter
+      +large
+      font-size: 35px
+      font-weight: 400
+      line-height: 25px
+      text-transform: uppercase
+      color: $main-color
+    &__text
+      +bold
+      font-size: 20px
+      font-weight: 400
+      line-height: 25px
+      color: $dark-tc
