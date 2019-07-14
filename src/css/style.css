@@ -704,7 +704,7 @@ ul, li {
   position: relative;
   background: url("../img/feedback/feedback-bg.jpg");
   background-position: 0% 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
 }
 
 .feedback__section {
