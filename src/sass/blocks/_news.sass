@@ -1,0 +1,29 @@
+.news
+  position: relative
+  background: url('../img/news/news-bg.jpg')
+  background-position: 0% 100%
+  background-repeat: no-repeat
+  &__section
+  
+  &-block
+    display: flex
+  &-header
+    display: flex
+  &-more  
+    display: flex
+    justify-content: center
+  &-button
+    width: 300px
+    height: 58px
+
+  &__button
+    background: $main-color
+    border: none
+    font-size: 20px
+    font-weight: 400
+    line-height: 28px
+    text-transform: uppercase
+    margin: 70px  
+    &:hover
+      background: lighten($main-color, 10%)
+      cursor: pointer 

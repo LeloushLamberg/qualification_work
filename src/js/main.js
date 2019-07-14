@@ -11,7 +11,19 @@ $(document).ready(function () {
       dotsClass: 'hero-dots',
       focusOnSelect: true
     });
-    
+  $('.feedback-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    dots: true,
+    arrows: false,
+    infinite: true,
+    fade: true,
+    dotsClass: 'feedback-dots',
+    focusOnSelect: true,
+    adaptiveHeight: true
+  });
     
   });
     

@@ -90,6 +90,7 @@ ul, li {
 }
 
 .section-button {
+  font-family: "Proxima Nova Lt";
   margin-top: 6px;
   margin-left: -32px;
   width: 244px;
@@ -98,6 +99,18 @@ ul, li {
   line-height: 58px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.input {
+  opacity: 0.65;
+  color: #020202;
+  font-family: "Proxima Nova Rg";
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 400;
+  width: 305px;
+  border: none;
+  border-bottom: 1px solid;
 }
 
 .slick-slider {
@@ -407,7 +420,7 @@ ul, li {
   background: #fffffe;
 }
 
-.hero-dots__item:active {
+.hero-dots__item:focus {
   background: #ffc800;
 }
 
@@ -685,5 +698,279 @@ ul, li {
   font-weight: 400;
   line-height: 25px;
   color: #020202;
+}
+
+.feedback {
+  position: relative;
+  background: url("../img/feedback/feedback-bg.jpg");
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+}
+
+.feedback__section {
+  padding-top: 111px;
+}
+
+.feedback__slide {
+  margin: 90px 0 66px 0;
+}
+
+.feedback-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feedback .slide-block {
+  width: 460px;
+  height: 302px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.feedback .slide-image__item {
+  position: relative;
+}
+
+.feedback .slide-person {
+  position: relative;
+}
+
+.feedback .slide-person__item {
+  background: #010101;
+  margin-bottom: 10px;
+}
+
+.feedback .slide-person__quotes {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.feedback .slide__name {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #ffc800;
+  font-family: "Proxima Nova Lt";
+}
+
+.feedback .slide__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #fffffe;
+  font-family: "Proxima Nova Rg";
+  text-align: center;
+}
+
+.feedback .slide-likes__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feedback .slide-likes__like {
+  padding-right: 20px;
+}
+
+.feedback .slide-likes__dislike {
+  padding-left: 20px;
+}
+
+.feedback .slide-likes__icon {
+  display: inline;
+  padding: 0 10px;
+}
+
+.feedback .slide-likes__counter {
+  display: inline;
+  color: #fffffe;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.slider__dots {
+  margin-bottom: 45px;
+}
+
+.slider-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 112px;
+}
+
+.slider-dots__item {
+  width: 20px;
+  height: 20px;
+  background: #fffffe;
+}
+
+.slider-dots__item:focus {
+  background: #ffc800;
+}
+
+.news {
+  position: relative;
+  background: url("../img/news/news-bg.jpg");
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+}
+
+.news-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.news-button {
+  width: 300px;
+  height: 58px;
+}
+
+.news__button {
+  background: #ffc800;
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 70px;
+}
+
+.news__button:hover {
+  background: #ffd333;
+  cursor: pointer;
+}
+
+.offer {
+  background: url("../img/offer/map.jpg");
+  background-position: 50% 50%;
+}
+
+.offer__section {
+  padding-bottom: 140px;
+}
+
+.offer-form {
+  width: 397px;
+  height: 385px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offer-form__button {
+  width: 305px;
+  height: 58px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-family: "Proxima Nova Rg";
+}
+
+.offer-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-family: "Proxima Nova Th";
+  width: 305px;
+  height: 58px;
+}
+
+.offer-title_black {
+  color: #020202;
+  padding-right: 10px;
+}
+
+.offer-title_yellow {
+  color: #ffc800;
+}
+
+.footer {
+  background: #000000;
+  min-height: 134px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fffffe;
 }
 /*# sourceMappingURL=style.css.map */
