@@ -385,7 +385,7 @@ ul, li {
 }
 
 .hero-slider__1 {
-  background-image: url("../img/hero/bgi-hero.jpg");
+  background-image: url("../img/hero/bgi-hero.png");
 }
 
 .hero-slider__2 {
@@ -521,6 +521,16 @@ ul, li {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 20px;
+}
+
+.price-item__button {
+  display: block;
+  width: 138px;
+  height: 33px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15.93px;
+  text-transform: uppercase;
 }
 
 .price__item-1 {
@@ -837,6 +847,10 @@ ul, li {
   background-repeat: no-repeat;
 }
 
+.news__section {
+  padding-top: 91px;
+}
+
 .news-page {
   padding-top: 32px;
   max-width: 377px;
@@ -855,6 +869,7 @@ ul, li {
 }
 
 .news-block {
+  margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -915,6 +930,10 @@ ul, li {
   background: #ffc800;
   font-family: "Proxima Nova Lt";
   margin-right: -3px;
+}
+
+.news .button {
+  margin-top: -20px;
 }
 
 .offer {
@@ -1122,5 +1141,17 @@ ul, li {
 
 .contact-social__icon:hover {
   background: #ffc800;
+}
+
+@media (max-width: 320px) {
+  .navbar-links {
+    display: none;
+  }
+  .navbar-communication {
+    display: none;
+  }
+  .hero__title {
+    display: inline;
+  }
 }
 /*# sourceMappingURL=style.css.map */
