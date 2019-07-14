@@ -715,15 +715,6 @@ ul, li {
   margin: 90px 0 66px 0;
 }
 
-.feedback-dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .feedback .slide-block {
   width: 460px;
   height: 302px;
@@ -770,6 +761,7 @@ ul, li {
 }
 
 .feedback .slide__text {
+  width: 460px;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -787,8 +779,17 @@ ul, li {
           justify-content: center;
 }
 
+.feedback .slide-likes__box button {
+  background: #010101;
+  border: none;
+}
+
 .feedback .slide-likes__like {
   padding-right: 20px;
+}
+
+.feedback .slide-likes__like:active {
+  color: lighten #ffc800 10%;
 }
 
 .feedback .slide-likes__dislike {
@@ -808,27 +809,24 @@ ul, li {
   line-height: 28px;
 }
 
-.slider__dots {
-  margin-bottom: 45px;
-}
-
-.slider-dots {
+.slick-dots {
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 112px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.slider-dots__item {
+.slick-dots__item {
+  margin: 5px;
   width: 20px;
   height: 20px;
   background: #fffffe;
 }
 
-.slider-dots__item:focus {
+.slick-dots__item:active {
   background: #ffc800;
 }
 
@@ -839,16 +837,47 @@ ul, li {
   background-repeat: no-repeat;
 }
 
+.news-page {
+  padding-top: 32px;
+  max-width: 377px;
+}
+
+.news-page__image {
+  margin-bottom: 19px;
+}
+
+.news-page__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  width: 323px;
+  margin-top: 10px;
+}
+
 .news-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .news-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 330px;
+}
+
+.news__header {
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #020202;
 }
 
 .news-more {
@@ -872,12 +901,20 @@ ul, li {
   font-weight: 400;
   line-height: 28px;
   text-transform: uppercase;
-  margin: 70px;
+  margin-bottom: 70px;
+  margin-top: 49px;
 }
 
 .news__button:hover {
   background: #ffd333;
   cursor: pointer;
+}
+
+.news-date_yellow {
+  padding: 3px;
+  background: #ffc800;
+  font-family: "Proxima Nova Lt";
+  margin-right: -3px;
 }
 
 .offer {

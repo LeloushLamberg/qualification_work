@@ -7,9 +7,7 @@
     padding-top: 111px
   &__slide
     margin: 90px 0 66px 0
-  &-dots
-    display: flex
-    justify-content: center 
+  
        
   .slide
     &-block
@@ -22,7 +20,7 @@
     &-image
       &__item
         position: relative
-
+        
     &-person
       position: relative
       &__item
@@ -38,7 +36,9 @@
       line-height: 28px
       color: $main-color
       +bold
+
     &__text
+      width: 460px
       font-size: 20px
       font-weight: 400
       line-height: 28px
@@ -49,8 +49,13 @@
       &__box
         display: flex
         justify-content: center
+        button
+          background: #010101
+          border: none
       &__like
         padding-right: 20px
+        &:active
+          color: lighten  ($main-color 10%)
       &__dislike
         padding-left: 20px
       &__icon
@@ -62,16 +67,17 @@
         font-size: 15px
         font-weight: 400
         line-height: 28px
-.slider
-  &__dots
-    margin-bottom: 45px 
+.slick
   &-dots
+  
+    margin-bottom: 40px 
     display: flex
-    justify-content: space-between
-    width: 112px
+    justify-content: center
+    
     &__item
+      margin:  5px
       width: 20px
       height: 20px
       background: $light-tc
-      &:focus
+      &:active
         background: $main-color
