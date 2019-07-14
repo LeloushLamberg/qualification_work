@@ -1005,6 +1005,7 @@ ul, li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: #fdfcfc;
 }
 
 .contact-box {
@@ -1017,6 +1018,109 @@ ul, li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #fffffe;
+  padding-top: 3px;
+}
+
+.contact-adress__adress {
+  color: #fdfcfc;
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.contact-phone {
+  color: #fdfcfc;
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.contact-phone:link {
+  text-decoration: none;
+  color: #fdfcfc;
+}
+
+.contact-phone:visited {
+  text-decoration: none;
+  color: #fdfcfc;
+}
+
+.contact-phone:active {
+  text-decoration: none;
+  color: #fdfcfc;
+}
+
+.contact-phone:hover {
+  text-decoration: none;
+  color: #fdfcfc;
+}
+
+.contact-phone_bold {
+  font-family: "Proxima Nova Lt";
+}
+
+.contact-phone:before {
+  content: "";
+  width: 1px;
+  height: 15px;
+  background: #fffffe;
+  border-left: 1px solid #fdfcfc;
+  margin-left: -30px;
+}
+
+.contact-phone__icon {
+  padding-left: 20px;
+  padding-right: 4px;
+}
+
+.contact-email {
+  color: #fdfcfc;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.contact-email__adress {
+  padding-right: 52px;
+}
+
+.contact-email:link {
+  text-decoration: none;
+  color: #fdfcfc;
+}
+
+.contact-email:visited {
+  text-decoration: none;
+  color: #fdfcfc;
+}
+
+.contact-email:active {
+  text-decoration: none;
+  color: #fdfcfc;
+}
+
+.contact-email:hover {
+  text-decoration: none;
+  color: #fdfcfc;
+}
+
+.contact-email_bold {
+  font-family: "Proxima Nova Lt";
+}
+
+.contact-email__icon {
+  padding-right: 6px;
+}
+
+.contact-social__link {
+  padding: 3px;
+}
+
+.contact-social__link:nth-child(1) {
+  margin-left: 15px;
+}
+
+.contact-social__icon:hover {
+  background: #ffc800;
 }
 /*# sourceMappingURL=style.css.map */

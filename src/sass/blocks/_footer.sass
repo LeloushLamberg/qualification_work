@@ -4,10 +4,80 @@
   display: flex
   align-items: center
   justify-content: center
+  color: $contacts-tc
 .contact
   &-box
     display: flex
     justify-content: space-between
     align-items: center
-    color: $light-tc
+    padding-top: 3px
   &-adress
+    &__adress
+      color: $contacts-tc
+      padding-left: 10px
+      font-size: 20px
+      font-weight: 400
+      line-height: 28px
+  
+  &-phone
+    color: $contacts-tc
+    font-size: 18px
+    line-height: 40px
+    text-transform: uppercase
+    &:link
+      text-decoration: none
+      color: $contacts-tc
+    &:visited
+      text-decoration: none
+      color: $contacts-tc
+    &:active  
+      text-decoration: none
+      color: $contacts-tc
+    &:hover 
+      text-decoration: none
+      color: $contacts-tc
+    &_bold
+      +bold
+    &:before
+      content: ""
+      width: 1px
+      height: 15px
+      background: $light-tc
+      border-left: 1px solid $contacts-tc
+      margin-left: -30px
+    &__icon
+      padding-left: 20px
+      padding-right: 4px
+  &-email
+    color: $contacts-tc
+    font-size: 18px
+    line-height: 40px
+    &__adress
+      padding-right: 52px
+    
+    &:link
+      text-decoration: none
+      color: $contacts-tc
+    &:visited
+      text-decoration: none
+      color: $contacts-tc
+    &:active  
+      text-decoration: none
+      color: $contacts-tc
+    &:hover 
+      text-decoration: none
+      color: $contacts-tc
+    &_bold
+      +bold
+    
+    &__icon
+      padding-right: 6px      
+  &-social
+    
+    &__link
+      padding: 3px
+      &:nth-child(1)
+        margin-left: 15px
+    &__icon
+      &:hover
+        background: $main-color
