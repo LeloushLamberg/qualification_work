@@ -580,6 +580,7 @@ ul, li {
       position: relative;
       display: inline-block;
       padding-right: 55px;
+      width: 70px;
       font-family: "Proxima Nova Th";
       font-size: 35px;
       font-weight: 400;
@@ -938,11 +939,16 @@ ul, li {
   .container {
     max-width: 982px;
     margin: auto; }
-  .news-block {
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-    .news-block div:last-child {
-      display: none; }
+  .hero__more {
+    margin-bottom: 220px; }
+  .hero-slider__1 {
+    min-width: 982px; }
+  .hero-slider__2 {
+    min-width: 982px; }
+  .hero-slider__3 {
+    min-width: 982px; }
+  .hero-slider__4 {
+    min-width: 982px; }
   .price__section {
     padding-bottom: 0px; }
   .price-list {
@@ -978,8 +984,33 @@ ul, li {
     margin-left: 5px; }
   .price li:nth-child(3n) {
     margin-right: 5px; }
+  .feedback:after {
+    height: 89%; }
   .feedback__section {
     padding-top: 40px; }
+  .choice__section {
+    padding-top: 50px;
+    padding-bottom: 0; }
+  .choice:after {
+    height: 89%; }
+  .choice-element__item {
+    margin: 18px 18px 0 18px; }
+  .choice__icon {
+    padding: 16px 0 0 0; }
+  .choice li {
+    padding-top: 0px;
+    padding-top: 0px; }
+    .choice li:nth-child(3n-2) {
+      margin: 18px 18px 0 18px; }
+    .choice li:nth-child(3n) {
+      margin: 18px 18px 0 18px; }
+  .choice__element {
+    padding: 47px 0; }
+  .news-block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .news-block div:last-child {
+      display: none; }
   .footer .contact-box {
     -ms-flex-pack: distribute;
         justify-content: space-around; } }

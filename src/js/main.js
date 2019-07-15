@@ -6,7 +6,8 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 1500,
     dots: false,
-    dotsClass: 'hero-dots'
+    dotsClass: 'hero-dots',
+    
   });
 
   $('.feedback-slider').slick({

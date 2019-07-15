@@ -3,12 +3,21 @@
     max-width: 982px
     margin: auto
   
-  .news
-    &-block
-      justify-content: space-around
-      div
-        &:last-child
-          display: none
+  .hero
+    &__more
+      margin-bottom: 220px
+    &-slider
+      &__1
+      
+        min-width: 982px
+        
+      
+      &__2
+        min-width: 982px
+      &__3
+        min-width: 982px
+      &__4
+        min-width: 982px
 
   .price
     &__section
@@ -53,9 +62,48 @@
         margin-left: 5px
       &:nth-child(3n)
         margin-right: 5px
+  
   .feedback
+    &:after
+      height: 89%
     &__section
       padding-top: 40px
+
+
+  .choice
+    &__section
+      padding-top: 50px
+      padding-bottom: 0
+    
+    &:after
+      height: 89%
+
+    &-element
+      &__item
+        margin: 18px 18px 0 18px
+    &__icon
+      padding: 16px 0 0 0
+    li
+      &:nth-child(5)
+      padding-top: 0px
+    
+      &:nth-child(6)
+      padding-top: 0px  
+    
+      &:nth-child(3n-2)
+        margin: 18px 18px 0 18px
+      &:nth-child(3n)
+        margin: 18px 18px 0 18px
+    &__element
+      padding: 47px 0  
+  .news
+    &-block
+      justify-content: space-around
+      div
+        &:last-child
+          display: none
+
+
   .footer
     .contact
       &-box
