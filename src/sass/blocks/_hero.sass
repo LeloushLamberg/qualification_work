@@ -46,19 +46,37 @@
       background-size: cover
   &-dots
     
-    display: flex
-    
-    justify-content: space-between
-    width: 112px
-    align-self: center
-
-    &__item
+    position: absolute
+    bottom: 45px
+    display: block
+    width: 100%
+    padding: 0
+    list-style: none
+    text-align: center
+    li
+      position: relative
+      display: inline-block
       width: 20px
       height: 20px
-      background: $light-tc
-      &:focus
-        background: $main-color
-      
+      margin: 0 4px
+      padding: 0
+      cursor: pointer
+      button
+        width: 20px
+        height: 20px
+        padding: 5px
+        cursor: pointer
+        &:hover
+          outline none
+          background: $main-color
+          &:before
+            opacity: 1
+        &:focus
+          outline none
+          background: $main-color
+          &:before
+            opacity: 1
+
   &-block
     width: 100%
     

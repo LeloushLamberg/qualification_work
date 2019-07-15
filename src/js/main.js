@@ -4,7 +4,7 @@ $(document).ready(function () {
     arrows: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 3500,
     dots: false,
     dotsClass: 'hero-dots',
     

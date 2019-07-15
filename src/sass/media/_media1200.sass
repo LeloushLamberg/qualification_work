@@ -8,10 +8,7 @@
       margin-bottom: 220px
     &-slider
       &__1
-      
-        min-width: 982px
-        
-      
+        min-width: 982px  
       &__2
         min-width: 982px
       &__3
@@ -30,7 +27,10 @@
       margin: 5px
       width: 330px
       height: 206px
-
+      &:nth-child(3n-2)
+        margin-left: 5px
+      &:nth-child(3n)
+        margin-right: 5px
       &__description
         font-size: 18px      
       &__button
@@ -57,11 +57,7 @@
     &__item-6
       margin: 5px
       
-    li
-      &:nth-child(3n-2)
-        margin-left: 5px
-      &:nth-child(3n)
-        margin-right: 5px
+    
   
   .feedback
     &:after
@@ -77,23 +73,24 @@
     
     &:after
       height: 89%
-
+    
     &-element
+      &__icon
+       padding: 16px 0 0 0
       &__item
         margin: 18px 18px 0 18px
-    &__icon
-      padding: 16px 0 0 0
-    li
-      &:nth-child(5)
-      padding-top: 0px
+   
     
-      &:nth-child(6)
-      padding-top: 0px  
+        &:nth-child(5)
+          padding-top: 0px
     
-      &:nth-child(3n-2)
-        margin: 18px 18px 0 18px
-      &:nth-child(3n)
-        margin: 18px 18px 0 18px
+        &:nth-child(6)
+          padding-top: 0px  
+    
+        &:nth-child(3n-2)
+          margin: 18px 18px 0 18px
+        &:nth-child(3n)
+          margin: 18px 18px 0 18px
     &__element
       padding: 47px 0  
   .news
@@ -107,4 +104,6 @@
   .footer
     .contact
       &-box
-        justify-content: space-around    
+        justify-content: space-around
+      &-adress
+        flex-basis: 38%    

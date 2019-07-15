@@ -1,16 +1,105 @@
 @media (max-width: 768px)
   .container
-    max-width: 557px
-    margin: auto
+    max-width: 740px
+    margin: auto 15px
+  .hero
+    &__more
+      margin-bottom: 220px
+    &-slider
+      &__1
+        min-width: 557px
+          
+      &__2
+        min-width: 557px
+      &__3
+        min-width: 557px
+      &__4
+        min-width: 557px
+    &__title
+      margin-top: 100px 
+      font-size: 25px
+      line-height: 31px
+    &__subtitle
+      font-size: 25px
+      line-height: 30px
+    &__text
+      font-size: 20px
+      line-height: 30px
+  
+  .price
+    
+    &__section
+      padding-bottom: 0px
+    &-list
+      justify-content: space-around
+    &__list
+      padding: 20px
+    &-item
+      margin: 5px
+      width: 245px
+      height: 200px
 
+      &__description
+        font-size: 18px      
+      &__button
+        +bold
+        width: 125px
+        height: 25px
+        font-size: 12px
+        line-height: 14px
+    &__item-1
+      margin: 5px 
+      
+    &__item-2
+      margin: 5px
+      
+    &__item-3
+      margin: 5px
+      
+    &__item-4
+      margin: 5px
+      
+    &__item-5
+      margin: 5px
+      
+    &__item-6
+      margin: 5px
+  
   .choice
     &-element
       flex-basis: 100%
       justify-content: center
       &__item
+        background: $background
+        &:nth-child(5)
+          padding: unset
+        &:nth-child(6)
+          padding: unset
+        &:nth-child(3n-2)
+          margin: unset
+        &:nth-child(3n)
+          margin: unset
   
   .news
     &-block
       div
         &:nth-child(2)
           display: none
+  
+  .footer
+    .contact
+      &-box
+        flex-direction: column-reverse
+      &-adress
+        padding: 0
+        margin: 0
+      &-social
+        padding: 0
+        margin: 0
+        order: 1
+        &__icon
+          margin: 5px 20px
+      &-other
+        padding: 0
+        margin: 0
+
