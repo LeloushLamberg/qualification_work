@@ -18,6 +18,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 2500, 
     arrows: false,
+    dots: true,
     dotsClass: 'slick-dots',
     focusOnSelect: true,
     infinite: true,

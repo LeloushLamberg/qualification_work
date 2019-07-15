@@ -686,21 +686,50 @@ ul, li {
     font-weight: 400;
     line-height: 28px; }
 
+/* вот, смотри */
 .slick-dots {
-  margin-bottom: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .slick-dots__item {
-    margin: 5px;
-    width: 20px;
-    height: 20px;
-    background: #fffffe; }
-    .slick-dots__item:active {
-      background: #ffc800; }
+  position: absolute;
+  bottom: -45px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  /* font-size: 0;
+  line-height: 0;
+  display: block; */
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  /* color: transparent; */
+  border: 0;
+  outline: none;
+  /* background: transparent; */
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1;
+}
 
 .news {
   position: relative; }
