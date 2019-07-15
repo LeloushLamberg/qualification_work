@@ -708,17 +708,18 @@ ul, li {
 }
 
 .slick-dots li button {
-  /* font-size: 0;
+  font-size: 0;
   line-height: 0;
-  display: block; */
+  display: block;
   width: 20px;
   height: 20px;
   padding: 5px;
   cursor: pointer;
   /* color: transparent; */
   border: 0;
+  border-radius: 50%;
   outline: none;
-  /* background: transparent; */
+  background-color: #ffc800;
 }
 
 .slick-dots li button:hover,
