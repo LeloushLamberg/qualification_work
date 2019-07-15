@@ -71,5 +71,5 @@ $(document).ready(function () {
     }
   });
    $("#phone").mask("8 (999) 999-9999");
-   
+   console.log('ты там долго ещё?')
 });

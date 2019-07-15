@@ -1707,25 +1707,25 @@ ul, li {
   .container .navbar-links__item {
     padding: 0;
     padding-left: 0;
+    margin: 2px;
   }
-  .container__more {
+  .container .navbar-logo {
+    padding: unset;
+  }
+  .hero__more {
     margin-bottom: 220px;
   }
-  .container-slider__1 {
-    min-width: 370px;
-    background-size: auto cover;
+  .hero-slider__1 {
+    min-width: 557px;
   }
-  .container-slider__2 {
-    min-width: 370px;
-    background-size: 50% cover;
+  .hero-slider__2 {
+    min-width: 557px;
   }
-  .container-slider__3 {
-    min-width: 370px;
-    background-size: 50% cover;
+  .hero-slider__3 {
+    min-width: 557px;
   }
-  .container-slider__4 {
-    min-width: 370px;
-    background-size: 50 .container-slider__4 cover;
+  .hero-slider__4 {
+    min-width: 557px;
   }
 }
 
