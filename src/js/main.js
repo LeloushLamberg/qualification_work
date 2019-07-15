@@ -32,20 +32,33 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 2500, 
     arrows: false,
-   
     dotsClass: 'slick-dots',
     focusOnSelect: true,
     infinite: true,
     adaptiveHeight: true,
-    responsive: [{
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        arrows: false,
-      }
-    }, ]
+    responsive: [
+      {
+        breakpoint: 1220,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+    ]
   });
-
+  
 });
