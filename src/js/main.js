@@ -7,6 +7,7 @@ $(document).ready(function () {
     autoplaySpeed: 3500,
     dots: false,
     dotsClass: 'hero-dots',
+    adaptiveHeight: true
     
   });
 
@@ -18,7 +19,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 2500, 
     arrows: false,
-    dotsClass: 'slick-dots',
+    dotsClass: 'feedback-dots',
     focusOnSelect: true,
     infinite: true,
     adaptiveHeight: true,
@@ -46,5 +47,29 @@ $(document).ready(function () {
       },
     ]
   });
-  
+  $("#offer-form").validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      phone: {
+        required: true,
+        minlength: 10
+      }
+    },
+    messages: {
+      name: {
+        required: "Введите своё имя",
+        minlength: "Введите полное имя"
+      },
+      phone: {
+        required: "Введите свой телефон",
+        minlength: "Мало цифр. Добавьте код города"
+      }
+    }
+  });
+   $("#phone").mask("8 (999) 999-9999");
+   
 });
