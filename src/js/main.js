@@ -1,27 +1,12 @@
 $(document).ready(function () {
 
   $('.hero-slider').slick({
-    
     arrows: false,
     infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear',
-    adaptiveHeight: true,
-    dotsClass: 'hero-dots',
-    focusOnSelect: true,
-      responsive: [
-         {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 1, 
-            slidesToScroll: 1,
-            infinite: true,
-            arrows: false,
-          }
-        },
-      ]
-
+    autoplay: true,
+    autoplaySpeed: 1500,
+    dots: false,
+    dotsClass: 'hero-dots'
   });
 
   $('.feedback-slider').slick({

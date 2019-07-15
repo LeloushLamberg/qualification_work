@@ -1,9 +1,16 @@
 
 .choice
+
   position: relative
-  background: url('../img/choice/choice-bg.jpg')
-  background-position: -345% 100%  
-  background-repeat: no-repeat
+  &:after
+    content: ''
+    width: 61.5%
+    height: 80%
+    position: absolute
+    left: 0
+    bottom: 0
+    background: $background
+    z-index: -1  
   
   &__section
     padding-top: 110px
@@ -69,6 +76,7 @@
       display: flex
       
     &__counter
+      position: relative
       display: inline-block
       padding-right: 55px
       
@@ -78,7 +86,15 @@
       line-height: 25px
       text-transform: uppercase
       color: $main-color
-    
+      &:before
+        content: ''
+        width: 31px
+        height: 2px
+        background: $dark-tc
+        position: absolute
+        top: 10px
+        right: 10px
+
     &__text
       display: block
       +bold

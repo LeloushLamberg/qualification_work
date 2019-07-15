@@ -1,5 +1,14 @@
 .navbar
-  
+  position: relative
+  &:after
+    content: ''
+    width: 35.5%
+    height: 100%
+    position: absolute
+    right: 0
+    top: 0
+    background: $background
+    z-index: -1
   &-block
     display: flex
     justify-content: space-between

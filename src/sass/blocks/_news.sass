@@ -1,10 +1,17 @@
 .news
   position: relative
-  background: url('../img/news/news-bg.jpg')
-  background-position: 0% 100%
-  background-repeat: no-repeat
+  &:after
+    content: ''
+    width: 100%
+    height: 85%;
+    position: absolute
+    left: 0
+    bottom: 0
+    background: $background
+    z-index: -1 
+
   &__section
-    padding-top: 91px
+    padding-top: 138px
   &-page
     padding-top: 32px
     max-width: 377px

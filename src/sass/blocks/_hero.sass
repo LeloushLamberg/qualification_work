@@ -1,37 +1,57 @@
 .hero
   position: relative
+  display: flex
+  flex-direction: column
   background: $black
-  z-index: -2
+  
   &-slider
     width: 100%
     position: absolute
     top: 0
     left: 0
-    z-index: -1
-    &__1,&__2,&__3,&__4,
+    
+    
+      
+    &__1
+      background-image: url("../img/hero/bgi-hero.png")
+      opacity: 0.2
       min-width: 1200px
       min-height: 745px
       width: 100%
-      
       background-repeat: no-repeat
       background-size: cover
-    &__1
-      background-image: url("../img/hero/bgi-hero.png")
     &__2
-      background-image: url("../img/hero/bgi-hero1.jpg")
+      background-image: url("../img/hero/bgi-hero.png")
+      opacity: 0.4
+      min-width: 1200px
+      min-height: 745px
+      width: 100%
+      background-repeat: no-repeat
+      background-size: cover
     &__3
-      background-image: url("../img/hero/bgi-hero2.jpg")
+      background-image: url("../img/hero/bgi-hero.png")
+      opacity: 0.6
+      min-width: 1200px
+      min-height: 745px
+      width: 100%
+      background-repeat: no-repeat
+      background-size: cover
     &__4
-      background-image: url("../img/hero/bgi-hero3.jpg")
+      background-image: url("../img/hero/bgi-hero.png")
+      opacity: 0.3
+      min-width: 1200px
+      min-height: 745px
+      width: 100%
+      background-repeat: no-repeat
+      background-size: cover
   &-dots
     
-    display: inline-flex
-    text-align: center
+    display: flex
+    
     justify-content: space-between
     width: 112px
-    position: absolute
-    bottom: 45px
-    left: 600px
+    align-self: center
+
     &__item
       width: 20px
       height: 20px
@@ -64,7 +84,7 @@
     font-weight: 400
     line-height: 50px
   &__text
-    opacity: 0.42
+    
     color: $light-tc
     +reg
     font-size: 20px
