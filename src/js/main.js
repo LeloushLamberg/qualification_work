@@ -70,6 +70,11 @@ $(document).ready(function () {
       }
     }
   });
-   $("#phone").mask("8 (999) 999-9999");
-   console.log('ты там долго ещё?')
+  //  $("#phone").mask("8 (999) 999-9999");
+   console.log('ты там долго ещё?');
+   $('.news-button').click(function (){
+    $('.news-page').css('display', 'block'),
+    $('.background').css('display', 'block')
+  });
+   
 });
