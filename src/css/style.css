@@ -72,7 +72,7 @@ ul, li {
 
 .section {
   padding-top: 100px; }
-  .section-button {
+  .section-title {
     font-family: "Proxima Nova Lt";
     margin-top: 6px;
     margin-left: -32px;
@@ -81,7 +81,9 @@ ul, li {
     font-weight: 400;
     line-height: 58px;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    background: #ffc800;
+    border: none; }
 
 .input {
   opacity: 0.65;
@@ -90,7 +92,7 @@ ul, li {
   font-style: italic;
   font-size: 18px;
   font-weight: 400;
-  width: 305px;
+  width: 75%;
   border: none;
   border-bottom: 1px solid; }
 
@@ -756,7 +758,7 @@ ul, li {
     background: #f7f7f7;
     z-index: -1; }
   .news__section {
-    padding-top: 138px; }
+    padding-top: 112px; }
   .news-page {
     padding-top: 32px;
     max-width: 377px; }
@@ -859,7 +861,7 @@ ul, li {
     .offer-form__phone {
       margin-top: 5px; }
     .offer-form__button {
-      width: 305px;
+      width: 75%;
       height: 58px;
       font-size: 20px;
       font-weight: 400;
@@ -882,7 +884,7 @@ ul, li {
     line-height: 28px;
     text-transform: uppercase;
     font-family: "Proxima Nova Th";
-    width: 305px;
+    width: 75%;
     height: 58px; }
     .offer-title_black {
       color: #020202;
@@ -1065,6 +1067,8 @@ ul, li {
     .news-block div:last-child {
       display: none; }
   .footer .contact-box {
+    max-width: 1115px;
+    width: 95%;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
   .footer .contact-adress {
@@ -1072,6 +1076,10 @@ ul, li {
         flex-basis: 38%; } }
 
 @media (max-width: 992px) {
+  *:hover {
+    color: inherit;
+    background: inherit;
+    cursor: inherit; }
   .container {
     max-width: 758px;
     margin: auto; }
@@ -1137,6 +1145,8 @@ ul, li {
   .feedback .slide__text {
     width: 325px;
     height: auto; }
+  .news__section {
+    padding-top: 70px; }
   .news-page {
     max-width: 350px; }
     .news-page__image {
@@ -1251,6 +1261,8 @@ ul, li {
         margin: unset; }
   .news-block div:nth-child(2) {
     display: none; }
+  .news__section {
+    padding-top: 110px; }
   .footer .contact-box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1303,12 +1315,17 @@ ul, li {
   .hero-slider__3 {
     min-width: 557px; }
   .hero-slider__4 {
-    min-width: 557px; } }
+    min-width: 557px; }
+  .offer-form {
+    width: 297px;
+    height: 385px; }
+  .input {
+    font-size: 14px; } }
 
 @media (max-width: 320px) {
   .container {
-    max-width: 300px;
-    margin: auto; }
+    max-width: 320px;
+    margin: 10px; }
   .navbar-links {
     display: none; }
   .navbar-communication {
