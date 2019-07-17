@@ -2,18 +2,15 @@
   .container
     max-width: 550px
     margin: auto 15px
-    .navbar
-      &-communication
-        flex-direction: column
-      &-links
-        display: flex
-        justify-content: center
-        &__item
-          padding: 0
-          padding-left: 0
-          margin: 2px
-      &-logo 
-        padding: unset 
+  .navbar
+    &-links
+      display: none
+    &-communication
+      display: none
+    &-menu-link
+      display: block
+      &:hover
+        cursor: pointer
   .hero
     &__more
       margin-bottom: 220px

@@ -9,6 +9,62 @@
     top: 0
     background: $background
     z-index: -1
+  &-menu-link
+    display: none
+    width: 50px
+    height: 50px
+    background: white
+    border-radius: 50%
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4)
+    position: fixed
+    top: 20px
+    right: 20px
+    span
+      display: block
+      height: 2px
+      width: 18px
+      background: black
+      position: absolute
+      left: 50%
+      margin-left: -9px
+      top: 50%
+      margin-top: -1px
+      &:before
+        content: ''
+        display: block
+        height: 2px
+        width: 18px
+        background: black
+        position: absolute
+        left: 50%
+        margin-left: -9px
+        top: 50%
+        margin-top: -6px
+        transition: all 0.2s
+      &:after
+        content: ''
+        display: block
+        height: 2px
+        width: 18px
+        background: black
+        position: absolute
+        left: 50%
+        margin-left: -9px
+        top: 50%
+        margin-top: -4px
+        transition: all 0.2s
+    &-active
+      span
+        transform: rotate(90deg)
+        &:before
+          transform: rotate(30deg)
+          margin-bottom: 0
+          
+        &:after
+          transform: rotate(-30deg)
+          margin-bottom: 0
+          margin-left: 0
+          
   &-block
     display: flex
     justify-content: space-between

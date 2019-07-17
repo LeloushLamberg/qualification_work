@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Proxima Nova Rg';
   src: url("../fonts/ProximaNova/ProximaNova-Regular.eot");
-  src: local("Proxima Nova Regular"), local("../fonts/ProximaNova/ProximaNova-Regular"), url("../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
+  src: local("Proxima Nova Regular"), local("../fonts/ProximaNova/ProximaNova-Regular"), url("../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: auto; }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'Proxima Nova Lt';
   src: url("../fonts/ProximaNova/ProximaNova-Semibold.eot");
-  src: local("Proxima Nova Semibold"), local("../fonts/ProximaNova/ProximaNova-Semibold"), url("../fonts/ProximaNova/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Semibold.ttf") format("truetype");
+  src: local("Proxima Nova Semibold"), local("../fonts/ProximaNova/ProximaNova-Semibold"), url("../fonts/ProximaNova/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: auto; }
@@ -17,7 +17,7 @@
 @font-face {
   font-family: 'Proxima Nova Th';
   src: url("../fonts/ProximaNova/ProximaNova-Extrabld.eot");
-  src: local("Proxima Nova Extrabold"), local("../fonts/ProximaNova/ProximaNova-Extrabld"), url("../fonts/ProximaNova/ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Extrabld.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-Extrabld.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Extrabld.ttf") format("truetype");
+  src: local("Proxima Nova Extrabold"), local("../fonts/ProximaNova/ProximaNova-Extrabld"), url("../fonts/ProximaNova/ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Extrabld.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Extrabld.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
   font-display: auto; }
@@ -41,7 +41,8 @@ a:active {
 
 a:hover {
   text-decoration: none;
-  color: #020202; }
+  color: #020202;
+  cursor: pointer; }
 
 h1, h2, h3 {
   padding: 0;
@@ -192,6 +193,65 @@ ul, li {
     top: 0;
     background: #f7f7f7;
     z-index: -1; }
+  .navbar-menu-link {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 20px;
+    right: 20px; }
+    .navbar-menu-link span {
+      display: block;
+      height: 2px;
+      width: 18px;
+      background: black;
+      position: absolute;
+      left: 50%;
+      margin-left: -9px;
+      top: 50%;
+      margin-top: -1px; }
+      .navbar-menu-link span:before {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 18px;
+        background: black;
+        position: absolute;
+        left: 50%;
+        margin-left: -9px;
+        top: 50%;
+        margin-top: -6px;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s; }
+      .navbar-menu-link span:after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 18px;
+        background: black;
+        position: absolute;
+        left: 50%;
+        margin-left: -9px;
+        top: 50%;
+        margin-top: -4px;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s; }
+    .navbar-menu-link-active span {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
+      .navbar-menu-link-active span:before {
+        -webkit-transform: rotate(30deg);
+                transform: rotate(30deg);
+        margin-bottom: 0; }
+      .navbar-menu-link-active span:after {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+        margin-bottom: 0;
+        margin-left: 0; }
   .navbar-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1288,24 +1348,14 @@ ul, li {
   .container {
     max-width: 550px;
     margin: auto 15px; }
-    .container .navbar-communication {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-    .container .navbar-links {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
-      .container .navbar-links__item {
-        padding: 0;
-        padding-left: 0;
-        margin: 2px; }
-    .container .navbar-logo {
-      padding: unset; }
+  .navbar-links {
+    display: none; }
+  .navbar-communication {
+    display: none; }
+  .navbar-menu-link {
+    display: block; }
+    .navbar-menu-link:hover {
+      cursor: pointer; }
   .hero__more {
     margin-bottom: 220px; }
   .hero-slider__1 {
@@ -1326,10 +1376,6 @@ ul, li {
   .container {
     max-width: 320px;
     margin: 10px; }
-  .navbar-links {
-    display: none; }
-  .navbar-communication {
-    display: none; }
   .hero__title {
     display: inline; }
   .news-page {
