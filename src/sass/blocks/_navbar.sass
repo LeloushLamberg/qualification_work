@@ -20,18 +20,18 @@
       background: black
       position: absolute
       left: 50%
-      margin-left: -9px
+      margin-left: -18px
       top: 50%
       margin-top: -1px
       &:before
         content: ''
         display: block
         height: 2px
-        width: 18px
+        width: 36px
         background: black
         position: absolute
         left: 50%
-        margin-left: -9px
+        margin-left: -18px
         top: 50%
         margin-top: -6px
         transition: all 0.2s
@@ -39,25 +39,25 @@
         content: ''
         display: block
         height: 2px
-        width: 18px
+        width: 36px
         background: black
         position: absolute
         left: 50%
-        margin-left: -9px
+        margin-left: -18px
         top: 50%
         margin-top: -4px
         transition: all 0.2s
     &-active
       span
-        transform: rotate(90deg)
+        background: transparent
         &:before
-          transform: rotate(30deg)
-          margin-bottom: 0
+          transform: rotate(45deg)
+          margin: 0
           
         &:after
-          transform: rotate(-30deg)
-          margin-bottom: 0
-          margin-left: 0
+          transform: rotate(-45deg)
+          margin: 0
+
           
   &-block
     display: flex
