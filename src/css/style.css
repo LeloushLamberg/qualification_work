@@ -237,12 +237,18 @@ ul, li {
 .navbar-menu-link {
   display: none;
   position: relative;
+  width: 100px;
+  height: 70px;
+}
+
+.navbar-menu-link:hover {
+  cursor: pointer;
 }
 
 .navbar-menu-link span {
   display: block;
   height: 2px;
-  width: 18px;
+  width: 36px;
   background: black;
   position: absolute;
   left: 50%;
@@ -276,25 +282,33 @@ ul, li {
   left: 50%;
   margin-left: -18px;
   top: 50%;
-  margin-top: -4px;
+  margin-top: 4px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
-.navbar-menu-link-active span {
+.navbar-menu-link_active {
+  cursor: pointer;
+}
+
+.navbar-menu-link_active:hover {
+  cursor: pointer;
+}
+
+.navbar-menu-link_active span {
   background: transparent;
 }
 
-.navbar-menu-link-active span:before {
+.navbar-menu-link_active span:before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  margin: 0;
+  margin-top: 0;
 }
 
-.navbar-menu-link-active span:after {
+.navbar-menu-link_active span:after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  margin: 0;
+  margin-top: 0;
 }
 
 .navbar-block {
@@ -1813,12 +1827,33 @@ ul, li {
     max-width: 550px;
     margin: auto 15px;
   }
+  .navbar__logo {
+    margin-left: 50px;
+  }
   .navbar-block {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .navbar-links {
     display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 0;
+    right: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .navbar-links__item:first-child {
+    margin-left: 23px;
+  }
+  .navbar-links__item:before {
+    display: none;
+  }
+  .navbar-links_active {
+    display: block;
   }
   .navbar-communication {
     display: none;
@@ -1832,6 +1867,12 @@ ul, li {
   .hero__more {
     margin-bottom: 220px;
   }
+  .news-page {
+    max-width: 310px;
+  }
+  .news-header {
+    width: 310px;
+  }
   .offer-form {
     width: 297px;
     height: 385px;
@@ -1844,7 +1885,10 @@ ul, li {
 @media (max-width: 320px) {
   .container {
     max-width: 320px;
-    margin: 10px;
+    margin: 0 10px;
+  }
+  .navbar__block {
+    margin: 0;
   }
   .hero {
     background: #000000;

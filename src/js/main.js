@@ -70,10 +70,23 @@ $(document).ready(function () {
     }
   });
   //  $("#phone").mask("8 (999) 999-9999");
-   console.log('ты там долго ещё?');
+   
    $('.news-button').click(function (){
     $('.news-page').css('display', 'block'),
     $('.background').css('display', 'block')
   });
-   
+   $('.navbar-menu-link').click(function () {
+     $(this).toggleClass('navbar-menu-link_active'),
+     $('.navbar-links').toggleClass('navbar-links_active'),
+     $('navbar-links_active').show(5000)
+   });
+   $('.navbar-menu-link_active').click(function () {
+     $(this).removeClass('navbar-menu-link_active'),
+     $('.navbar-links').removeClass('navbar-links_active')
+   });
+   $('.navbar-links__item').click(function () {
+     $('.navbar-menu-link_active').removeClass('navbar-menu-link_active'),
+      $('.navbar-links').removeClass('navbar-links_active')
+   });
+   console.log('ты там долго ещё?');
 });

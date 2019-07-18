@@ -3,22 +3,43 @@
     max-width: 550px
     margin: auto 15px
   .navbar
+    &__logo
+      margin-left: 50px
     &-block
-      justify-content: space-around
+      justify-content: space-between
     &-links
       display: none
+      flex-direction: column
+      top: 0
+      right: 0
+     
+      transition: all 0.5s
+      &__item
+        &:first-child
+          margin-left: 23px
+        &:before
+          display: none
+      &_active
+        display: block
     &-communication
       display: none
     &-menu-link
       display: block
       &:hover
         cursor: pointer
+
+
   .hero
     &__more
       margin-bottom: 220px
     &-slider
       
-  
+  .news
+    &-page
+      max-width: 310px
+    &-header
+      width: 310px
+    
 
   .offer
     &-form

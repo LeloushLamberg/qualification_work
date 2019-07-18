@@ -12,11 +12,16 @@
   &-menu-link
     display: none  
     position: relative
+    width: 100px
+    height: 70px
     
+    &:hover
+      cursor: pointer
+      
     span
       display: block
       height: 2px
-      width: 18px
+      width: 36px
       background: black
       position: absolute
       left: 50%
@@ -45,18 +50,21 @@
         left: 50%
         margin-left: -18px
         top: 50%
-        margin-top: -4px
+        margin-top: 4px
         transition: all 0.2s
-    &-active
+    &_active
+      cursor: pointer
+      &:hover
+        cursor: pointer
       span
         background: transparent
         &:before
           transform: rotate(45deg)
-          margin: 0
+          margin-top: 0
           
         &:after
           transform: rotate(-45deg)
-          margin: 0
+          margin-top: 0
 
           
   &-block
