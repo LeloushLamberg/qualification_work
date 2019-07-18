@@ -373,12 +373,47 @@ ul, li {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #000000; }
+  .hero .slick-dots {
+    position: absolute;
+    bottom: 2px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center; }
+    .hero .slick-dots li {
+      position: relative;
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      margin: 0 6px;
+      padding: 0;
+      cursor: pointer; }
+      .hero .slick-dots li button {
+        border: none;
+        background: #f1f1f1;
+        color: transparent;
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        cursor: pointer; }
+        .hero .slick-dots li button:hover {
+          background: #ffc800;
+          color: #ffc800; }
+          .hero .slick-dots li button:hover:before {
+            opacity: 1; }
+        .hero .slick-dots li button:focus {
+          background: #ffc800;
+          color: #ffc800; }
+          .hero .slick-dots li button:focus:before {
+            opacity: 1; }
   .hero-slider {
     width: 100%;
     position: absolute;
     top: 0;
     left: 0; }
     .hero-slider__1 {
+      position: absolute;
       background-image: url("../img/hero/bgi-hero.png");
       opacity: 0.2;
       min-width: 1200px;
@@ -410,35 +445,6 @@ ul, li {
       width: 100%;
       background-repeat: no-repeat;
       background-size: cover; }
-  .hero-dots {
-    position: absolute;
-    bottom: 45px;
-    display: block;
-    width: 100%;
-    padding: 0;
-    list-style: none;
-    text-align: center; }
-    .hero-dots li {
-      position: relative;
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      margin: 0 4px;
-      padding: 0;
-      cursor: pointer; }
-      .hero-dots li button {
-        width: 20px;
-        height: 20px;
-        padding: 5px;
-        cursor: pointer; }
-        .hero-dots li button:hover {
-          background: #ffc800; }
-          .hero-dots li button:hover:before {
-            opacity: 1; }
-        .hero-dots li button:focus {
-          background: #ffc800; }
-          .hero-dots li button:focus:before {
-            opacity: 1; }
   .hero-block {
     width: 100%; }
   .hero__title {
@@ -680,34 +686,39 @@ ul, li {
 
 .feedback {
   position: relative; }
-  .feedback-dots {
+  .feedback .slick-dots {
     position: absolute;
-    bottom: 45px;
+    bottom: -88px;
     display: block;
     width: 100%;
     padding: 0;
     list-style: none;
     text-align: center; }
-    .feedback-dots li {
+    .feedback .slick-dots li {
       position: relative;
       display: inline-block;
       width: 20px;
       height: 20px;
-      margin: 0 4px;
+      margin: 0 6px;
       padding: 0;
       cursor: pointer; }
-      .feedback-dots li button {
+      .feedback .slick-dots li button {
+        border: none;
+        background: #f1f1f1;
+        color: transparent;
         width: 20px;
         height: 20px;
         padding: 5px;
         cursor: pointer; }
-        .feedback-dots li button:hover {
-          background: #ffc800; }
-          .feedback-dots li button:hover:before {
+        .feedback .slick-dots li button:hover {
+          background: #ffc800;
+          color: #ffc800; }
+          .feedback .slick-dots li button:hover:before {
             opacity: 1; }
-        .feedback-dots li button:focus {
-          background: #ffc800; }
-          .feedback-dots li button:focus:before {
+        .feedback .slick-dots li button:focus {
+          background: #ffc800;
+          color: #ffc800; }
+          .feedback .slick-dots li button:focus:before {
             opacity: 1; }
   .feedback:after {
     content: '';
@@ -1248,6 +1259,9 @@ ul, li {
         margin-left: 10px; } }
 
 @media (max-width: 768px) {
+  .section-title {
+    margin-top: 0 !important;
+    margin-left: 5px  !important; }
   .container {
     max-width: 740px;
     margin: auto 15px; }
@@ -1358,14 +1372,6 @@ ul, li {
       cursor: pointer; }
   .hero__more {
     margin-bottom: 220px; }
-  .hero-slider__1 {
-    min-width: 557px; }
-  .hero-slider__2 {
-    min-width: 557px; }
-  .hero-slider__3 {
-    min-width: 557px; }
-  .hero-slider__4 {
-    min-width: 557px; }
   .offer-form {
     width: 297px;
     height: 385px; }
@@ -1376,8 +1382,16 @@ ul, li {
   .container {
     max-width: 320px;
     margin: 10px; }
-  .hero__title {
-    display: inline; }
+  .hero {
+    background: #000000; }
+    .hero-section {
+      max-height: 647px; }
+    .hero__title {
+      display: inline; }
+    .hero .slick-dots {
+      display: none; }
+    .hero-slider {
+      display: none; }
   .news-page {
     margin: 0;
     padding: 10px 0; }

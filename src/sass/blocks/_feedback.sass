@@ -1,7 +1,7 @@
 .feedback
-  &-dots
+  .slick-dots
     position: absolute
-    bottom: 45px
+    bottom: -88px
     display: block
     width: 100%
     padding: 0
@@ -12,10 +12,13 @@
       display: inline-block
       width: 20px
       height: 20px
-      margin: 0 4px
+      margin: 0 6px
       padding: 0
       cursor: pointer
       button
+        border: none
+        background: $lighten
+        color: transparent
         width: 20px
         height: 20px
         padding: 5px
@@ -23,11 +26,13 @@
         &:hover
           outline none
           background: $main-color
+          color: $main-color
           &:before
             opacity: 1
         &:focus
           outline none
           background: $main-color
+          color: $main-color
           &:before
             opacity: 1
 
