@@ -46,7 +46,7 @@
               <span class="navbar-communication__number"> 342 22 21</span>
             </a>
           </div>
-          <button class="button navbar-communication__callback" onclick="ym(54182755, 'reachGoal', 'navbar-button'); return true;" id="callback-nav">Заказать звонок</button>
+          <button class="button navbar-communication__callback callback" onclick="ym(54182755, 'reachGoal', 'navbar-button'); return true;" id="callback-nav">Заказать звонок</button>
         </div>
         
         <a href="#menu" class="navbar-menu-link">
@@ -322,7 +322,7 @@
           <input type="text" class="input offer-form__name" id="name" name="name" placeholder="Введите Ваше имя">
           <input type="text" class="input offer-form__phone" id="phone" name="phone"
             placeholder="Введите Ваш номер телефона">
-          <button class="button offer-form__button" onclick="ym(54182803, 'reachGoal', 'offer-button'); return true;" id="callback-offer">заказать звонок</button>
+          <button class="button offer-form__button callback" onclick="ym(54182803, 'reachGoal', 'offer-button'); return true;" id="callback-offer">заказать звонок</button>
         </form>
       </div>
     </section>
@@ -363,6 +363,13 @@
     </div>
     <!-- </div> -->
   </footer>
+  <div class="modal" id="call-massage">
+    <div class="modal-dialog">
+      <button class="modal-dialog__close" id="close">&times;</button>
+      <h5 class="modal-dialog__message">В течении 60 секунд наш менеджер перезвонит вам.</h5>
+      <span class="modal-dialog__information">Это окно закроется автоматически</span>
+    </div>
+  </div>
   <script src="./js/jquery-3.4.1.min.js"></script>
   <script src="./js/slick.min.js"></script>
   <script src="./js/jquery.validate.min.js"></script>

@@ -1,0 +1,30 @@
+{
+  "name": "Combat_project",
+  "version": "1.0.0",
+  "description": "First real project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeloushLamberg/Combat_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeloushLamberg/Combat_project/issues"
+  },
+  "homepage": "https://github.com/LeloushLamberg/Combat_project#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-minify": "^3.1.0"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-tinypng-compress": "^1.2.5",
+    "jquery": "^3.4.1"
+  }
+}
