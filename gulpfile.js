@@ -34,9 +34,9 @@ done()
 });
 gulp.task('tinypng', function (done) {
   gulp.src('./src/img/*.{png,jpg,jpeg}')
-      // .pipe(tinyPNG({
-          // key: 'D47E7DbIJxCb8zKUnafAgiZKFBjOXMC4'
-      // }))
+       .pipe(tinyPNG({
+           key: 'D47E7DbIJxCb8zKUnafAgiZKFBjOXMC4'
+       }))
       .pipe(gulp.dest('dist/img/'));
       done()
 });
