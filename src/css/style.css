@@ -956,7 +956,16 @@ ul, li {
 
 .offer {
   background: url("../img/offer/map.jpg");
-  background-position: 50% 50%; }
+  background-position: 50% 50%;
+  position: relative; }
+  .offer .map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; }
   .offer__section {
     padding: 141px 0 142px 0; }
   .offer__title {
