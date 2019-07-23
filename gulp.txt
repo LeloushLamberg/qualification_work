@@ -1,0 +1,11 @@
+npm init -y
+npm install --save-dev gulp
+npm install gulp-cli -g
+npm install gulp -D
+npm install gulp-clean-css --save-dev
+npm install --save-dev gulp-minify
+npm install --save gulp-htmlmin
+npm install gulp-tinypng-compress
+
+
+

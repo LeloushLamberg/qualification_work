@@ -1,30 +1,29 @@
 {
-  "name": "Combat_project",
+  "name": "qualification_work",
   "version": "1.0.0",
-  "description": "First real project",
-  "main": "index.js",
+  "description": "qualification work on webstart 3.0",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-clean-css": "^4.2.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-tinypng-compress": "^1.2.5"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LeloushLamberg/Combat_project.git"
+    "url": "git+https://github.com/LeloushLamberg/qualification_work.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Lulu0512",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LeloushLamberg/Combat_project/issues"
+    "url": "https://github.com/LeloushLamberg/qualification_work/issues"
   },
-  "homepage": "https://github.com/LeloushLamberg/Combat_project#readme",
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.2.0",
-    "gulp-minify": "^3.1.0"
-  },
-  "dependencies": {
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-tinypng-compress": "^1.2.5",
-    "jquery": "^3.4.1"
-  }
+  "homepage": "https://github.com/LeloushLamberg/qualification_work#readme"
 }
